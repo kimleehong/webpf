@@ -1,0 +1,170 @@
+/* main-slide */
+.swiper-box-1 {
+  margin-top: 150px;
+  width: 1920px;
+  height: 812px;
+}
+
+.swiper-box-1 .swiper-pagination {
+  top: 750px;
+}
+
+.swiper-box-1 .btns-1 {
+  font-size: 20px;
+  font-weight: 300;
+  position: absolute;
+  top: 430px;
+  left: 317px;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  background-color: #252523;
+  border-radius: 15px;
+}
+
+/* notice */
+.notice {
+  height: 150px;
+}
+
+.notice > div {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notice > div > p {
+  color: #3a3a3a;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.notice > div > a:nth-child(2) {
+  position: relative;
+  color: #3a3a3a;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: -1000px;
+}
+
+.notice > div > a:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-top: 1px solid #3a3a3a;
+  transition: width 0.3s;
+}
+
+.notice > div > a:nth-child(2):hover::after {
+  width: 100%;
+}
+
+.notice > div > a:nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.notice > div > a:last-child:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* product */
+.pro__1,
+.pro__2,
+.pro__3,
+.pro__4 {
+  background-image: url(https://cdn.jsdelivr.net/gh/kimleehong/webpf/docs/img/03.%20best-product/01.%20oily/BP_oliy_bg_1.png);
+  height: 866px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+
+.pro__1 {
+  margin-top: 0px;
+}
+
+.pro__1_fist_text,
+.pro__1_sec_text,
+.pro__2_fist_text,
+.pro__2_sec_text,
+.pro__3_fist_text,
+.pro__3_sec_text,
+.pro__4_fist_text,
+.pro__4_sec_text {
+  display: flex;
+  justify-content: center;
+}
+
+.pro__2 {
+  background-image: url(https://cdn.jsdelivr.net/gh/kimleehong/webpf/docs/img/03.%20best-product/02.%20total/BP_total_bg_2.png);
+}
+
+.pro__3 {
+  background-image: url(https://cdn.jsdelivr.net/gh/kimleehong/webpf/docs/img/03.%20best-product/03.%20moistuer/BP_moistuer_bg_3.png);
+}
+
+.pro__4 {
+  background-image: url(https://cdn.jsdelivr.net/gh/kimleehong/webpf/docs/img/03.%20best-product/04.%20wrinkle/BP_wrinkle_bg_4.png);
+}
+
+.pro > div > a > div:first-child > img:hover {
+  transform: scale(1.1) translatey(-6%);
+  transition: transform 0.3s linear;
+}
+
+/* review-slide */
+.swiper-box-2 {
+  margin-top: 75px;
+}
+
+.swiper-box-2__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.swiper-box-2 .swiper-slide > a > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-box-2 .swiper-button-prev {
+  color: #3a3a3a;
+  left: 30px;
+  height: 200px;
+}
+
+.swiper-box-2 .swiper-button-prev::after {
+  font-size: 50px;
+}
+
+.swiper-box-2 .swiper-button-next {
+  color: #3a3a3a;
+  right: 30px;
+  height: 200px;
+}
+
+.swiper-box-2 .swiper-button-next::after {
+  font-size: 50px;
+}
+
+html > body .swiper-box-1 .swiper-pagination {
+  bottom: 380px;
+}
+
+html > body .swiper-box-2 .swiper-pagination {
+  bottom: -40px;
+}
+
+.swiper-box-2 > .swiper > div > div > a > img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s linear;
+}

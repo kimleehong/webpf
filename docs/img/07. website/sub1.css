@@ -1,0 +1,256 @@
+/* section-menu-bar */
+.section-menu-bar > ul {
+  border-bottom: 1px solid #b7b7b7;
+  padding-bottom: 30px;
+}
+
+.section-menu-bar > ul > li > a {
+  padding: 0 24px 31px 24px;
+  font-size: 42px;
+  color: #b7b7b7;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-menu-bar > ul > li:first-child > a {
+  color: #222222;
+}
+
+.section-menu-bar > ul > li:hover > a {
+  color: #222222;
+}
+
+.section-menu-bar > ul > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  border-top: 3px solid #ff9c00;
+  transition: width 0.3s;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.section-menu-bar > ul > li:hover > a::after {
+  width: 100%;
+}
+
+.section-2 {
+  margin-top: 40px;
+}
+
+.section-pgn-bar {
+  font-size: 22px;
+  color: #757575;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.section-pgn-bar > ul:nth-child(3) {
+  padding-right: 20px;
+}
+
+.section-pgn-bar > ul > li > img {
+  height: 40px;
+}
+
+.section-pgn-bar > ul:nth-child(3) > li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.section-pgn-bar > ul:nth-child(3) > li:first-child {
+  color: #222222;
+}
+
+.section-pgn-bar > ul:nth-child(3) > li:hover {
+  transform: scale(1.1);
+  color: #222222;
+}
+
+/* section-menu-bar-2 */
+.section-menu-bar .section-menu-bar-2 {
+  position: absolute;
+  top: 94px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.3s linear;
+  z-index:8;
+}
+
+.section-menu-bar .section-menu-bar-2 > ul {
+  background-color: white;
+  border: 1px solid #b7b7b7;
+  color: #b7b7b7;
+}
+
+.section-menu-bar .section-menu-bar-2 > ul > li > a {
+  padding: 10px;
+  display: block;
+}
+
+.section-menu-bar > ul > li {
+  position: relative;
+}
+
+.section-menu-bar > ul > li:hover .section-menu-bar-2 {
+  height: 700%;
+}
+
+.section-menu-bar .section-menu-bar-2 > ul > li > a:hover {
+  color: #222222;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+/* prod-box */
+.prod-box {
+  margin-top: 100px;
+}
+
+.prod-box > ul {
+  padding-left: 40px;
+}
+
+.prod-box * {
+  box-sizing: border-box;
+}
+
+.prod-box__img {
+  width: 410px;
+  height: 410px;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.prod-box__img > a {
+  display: block;
+}
+
+.prod-box__img > a:hover {
+  background-color: #ededed;
+}
+
+.prod-box__img > a > img {
+  height: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.prod-box__img > a:hover > img {
+  transform: scale(1.1) translatey(-6%);
+}
+
+.prod-box__text {
+  width: 410px;
+  padding: 30px 7px 0;
+  height: 250px;
+}
+
+.prod-box__text__simple {
+  margin-bottom: 5px;
+  color: #757575;
+  font-size: 14px;
+}
+
+.prod-box__text__strong {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.prod-box__text__price {
+  color: #a72a0a;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-top: 12px;
+}
+
+.prod-box > ul > li {
+  position: relative;
+}
+
+.prod-box > ul > li:nth-child(5) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(6) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(7) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(10) > .prod-box__img::after {
+  content: "SET";
+  position: absolute;
+  top: 59%;
+  font-size: 20px;
+  border: 2px solid yellowgreen;
+  padding: 0 10px;
+  color: yellowgreen;
+}
+
+.prod-box > ul > li:nth-child(2) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(3) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(4) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(5) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(6) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(8) > .prod-box__img::after,
+.prod-box > ul > li:nth-child(12) > .prod-box__img::after {
+  content: "BEST";
+  position: absolute;
+  top: 59%;
+  font-size: 20px;
+  border: 2px solid orchid;
+  padding: 0 10px;
+  color: orchid;
+}
+
+.prod-box > ul > li:nth-child(9) > .prod-box__img::after{
+  content: "NEW";
+  position: absolute;
+  top: 59%;
+  font-size: 20px;
+  border: 2px solid blue;
+  padding: 0 10px;
+  color: blue;
+}
+
+.prod-box > ul > li:nth-child(5) > .prod-box__img::before,
+.prod-box > ul > li:nth-child(6) > .prod-box__img::before {
+  content: "SET";
+  position: absolute;
+  top: 59%;
+  left: 17%;
+  font-size: 20px;
+  border: 2px solid yellowgreen;
+  padding: 0 10px;
+  color: yellowgreen;
+}
+
+.section-prod-list__page-nav > span:nth-child(2),
+.section-prod-list__page-nav > span:nth-child(3),
+.section-prod-list__page-nav > span:nth-child(4) {
+  color: #495164;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.section-prod-list__page-nav > span:nth-child(3),
+.section-prod-list__page-nav > span:nth-child(4) {
+  color: #939393;
+}
+
+.section-prod-list__page-nav > span:nth-child(2):hover,
+.section-prod-list__page-nav > span:nth-child(3):hover,
+.section-prod-list__page-nav > span:nth-child(4):hover {
+  text-decoration: underline;
+  text-underline-position: under;
+  transform: scale(1.2);
+  color: #495164;
+}
+
+.section-prod-list__page-nav > span:nth-child(1):hover,
+.section-prod-list__page-nav > span:nth-child(5):hover {
+  transform: scale(1.3);
+}
