@@ -5,6 +5,9 @@ $('body').imagesLoaded(function() {
   AOS.init();
 });
 
+AOS.init({
+   once: true
+})
 
 // menu-box
 //탑바 초기화
